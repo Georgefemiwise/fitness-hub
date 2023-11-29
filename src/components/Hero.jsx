@@ -14,9 +14,6 @@ export default function Hero() {
               et a id nisi.
             </p>
             <button className="btn btn-primary">Get Started</button>
-            <Link to={`/detail/2`}>
-              Go to MyComponent with ID 
-            </Link>
           </div>
         </div>
       </div>

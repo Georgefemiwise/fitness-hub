@@ -13,7 +13,7 @@ export default function Detail() {
           item.product_id == id && (
             <div className="flex border px-24 card">
               <img className="w-[40%]" src={img} alt={item.name} />
-              <div className="flex-1 p-3">
+              <div className=" card-body flex-1 p-3">
                 <p className="text-gray-500">{item.product_id}</p>
                 <h1 className="text-2xl font-extrabold">{item.name}</h1>
                 <h3 className="text-primary font-semibold">Ghs {item.price}</h3>
