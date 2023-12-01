@@ -13,13 +13,18 @@ export default function Card({ id, desc, name, category, price, qty }) {
       </figure>
       <div className="card-body ">
         <div className="flex items-center justify-between">
-          <Link to={`detail/${id}`} className="card-title">{name}</Link>
+          <h3  className="card-title">
+            {name}
+          </h3>
           <div className="badge badge-sm badge-outline">{category}</div>
         </div>
 
         <p>{desc.substring(0, 50) + "..."}</p>
         <div className="card-actions justify-between items-center">
-          <button className="btn btn-primary btn-sm">Buy Now</button>
+         
+          <Link to={`/detail/${id}`} className="btn btn-primary btn-sm">
+            View
+          </Link>
           <div className="font-bold">{price}</div>
         </div>
       </div>
