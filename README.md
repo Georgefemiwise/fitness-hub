@@ -1,3 +1,3 @@
 # fitness
 
-npm run dev == start local server
+<!-- npm run dev == start local server -->
