@@ -1,14 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { img1 } from "../assets";
-
-
 
 export default function Card({ id, desc, name, category, price, img }) {
-  
- console.log(img);
+  console.log(img);
 
-  
   return (
     <div className="card w-full bg-base-100 shadow-xl">
       <figure
@@ -36,4 +31,3 @@ export default function Card({ id, desc, name, category, price, img }) {
     </div>
   );
 }
-
