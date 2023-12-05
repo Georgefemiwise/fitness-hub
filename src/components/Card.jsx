@@ -5,14 +5,9 @@ export default function Card({ id, desc, name, category, price, img }) {
   console.log(img);
 
   return (
-    <div className="card w-full bg-base-100 shadow-xl">
-      <figure
-        className="px-10 pt-10"
-        style={{
-          backgroundImage: `url(${img})`,
-        }}
-      >
-        <img src={img} alt={name} className="rounded-xl" />
+    <div className="card  w-full bg-base-100 shadow-xl">
+      <figure className="px-10 pt-10">
+        <img src={img} alt={name} className="rounded-xl max-h-64" />
       </figure>
       <div className="card-body ">
         <div className="flex items-center justify-between">

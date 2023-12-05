@@ -21,7 +21,7 @@ export default function Product() {
     ));
   };
   return (
-    <div>
+    <div className="">
       <Section>{data()}dd</Section>
     </div>
   );
