@@ -1,13 +1,8 @@
-import React, { useState } from "react";
-import {
-  Link,
-  NavLink,
-  Navigate,
-  useNavigate,
-  useParams,
-} from "react-router-dom";
-import dataset from "../assets/data.json";
-import img from "../assets/1.jpg";
+import React, { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
+import { useCart } from "../context/carContext";
+import dataset from "../assets/data.js";
+// import { img1 } from "../assets";l
 
 export default function Detail() {
   // get the id of the product from url
@@ -17,27 +12,32 @@ export default function Detail() {
   const data = dataset.find((item) => item.product_id == id);
 
   // quantity  is set to 0 by default
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
 
   //ad and remove func for quantity
   const add = () => setCount(count + 1);
   const del = () => {
     // prevent qty rrom entering a negative number
-    if (count <= 0) {
-      setCount(0);
+    if (count <= 1) {
+      setCount(1);
     } else {
       setCount(count - 1);
     }
+  };
+
+  const { addToCart } = useCart();
+
+  // since 0ne information is comming here
+  // this fuction simply just adds it to cart wher the action button is clicked
+  const handleAddToCart = () => {
+    addToCart(data, count);
   };
 
   return (
     <div className="grid place-content-center  w-screen  h-screen ">
       <div key={id} className="card card-side bg-base-200 shadow-xl p-10">
         <figure className="min-w-xl max-w-xl">
-          <img
-            src={img}
-            alt="Movie"
-          />
+          <img src={data.image} alt="Movie" />
         </figure>
         <div className="card-body">
           <p className="text-gray-500">
@@ -55,8 +55,8 @@ export default function Detail() {
           <label className="form-control w-full max-w-xs">
             <div className="flex gap-2">
               {/* add qty value by ` */}
-              <button className="btn btn-primary text-2xl" onClick={add}>
-                +
+              <button className="btn btn-primary text-2xl" onClick={del}>
+                -
               </button>
               <input
                 type="text"
@@ -65,8 +65,8 @@ export default function Detail() {
                 readOnly
               />
               {/* delete qty value by 1 */}
-              <button className="btn btn-primary text-2xl" onClick={del}>
-                -
+              <button className="btn btn-primary text-2xl" onClick={add}>
+                +
               </button>
             </div>
           </label>
@@ -76,7 +76,9 @@ export default function Detail() {
             <Link className="btn btn-outline " to={"/products"}>
               back
             </Link>
-            <button className="btn btn-primary">Add to cart</button>
+            <button className="btn btn-primary" onClick={handleAddToCart}>
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
