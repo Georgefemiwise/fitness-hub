@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import { useCart } from "../context/carContext";
 
 export default function NavBar() {
+  const { cart } = useCart();
 
-  const {cart} = useCart()
+  // Calculate total
+  const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+
   return (
     <>
       <div className="navbar  bg-base-100 z-50">
@@ -92,14 +95,37 @@ export default function NavBar() {
             </div>
             <div
               tabIndex={0}
-              className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow"
+              className="mt-3 z-[1] card card-compact dropdown-content w- bg-base-100 shadow"
             >
               <div className="card-body">
-                <span className="font-bold text-lg">{cart.length} Items</span>
-                <span className="text-info">Subtotal: $999</span>
+                <span className="font-bold text-lg">
+                  {cart.length} {cart.length > 1 ? "Items" : "Item"}
+                </span>
+                <div className="overflow-x-auto">
+                  <table className="table">
+                    {/* head */}
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>subtotal</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {cart.map((item) => (
+                        <tr key={item.product_id}>
+                          <td>{item.name}</td>
+                          <td>{item.quantity}</td>
+                          <td>{Math.floor(item.price * item.quantity)}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
                 <div className="card-actions">
                   <button className="btn btn-primary btn-block">
-                    View cart
+                    Total: {Math.floor(total)}
                   </button>
                 </div>
               </div>

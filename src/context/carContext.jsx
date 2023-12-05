@@ -11,7 +11,7 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = (item, quantity) => {
     const existingItem = cart.find(
-      (cartItem) => cartItem.id === item.product_id
+      (cartItem) => cartItem.product_id === item.product_id
     );
 
     if (existingItem) {

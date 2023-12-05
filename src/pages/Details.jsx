@@ -12,14 +12,14 @@ export default function Detail() {
   const data = dataset.find((item) => item.product_id == id);
 
   // quantity  is set to 0 by default
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
 
   //ad and remove func for quantity
   const add = () => setCount(count + 1);
   const del = () => {
     // prevent qty rrom entering a negative number
-    if (count <= 0) {
-      setCount(0);
+    if (count <= 1) {
+      setCount(1);
     } else {
       setCount(count - 1);
     }
