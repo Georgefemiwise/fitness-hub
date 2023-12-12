@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/carContext";
+import makePayment from "../utility/paystack";
 
 export default function NavBar() {
   const { cart } = useCart();
@@ -124,8 +125,12 @@ export default function NavBar() {
                 </div>
 
                 <div className="card-actions">
-                  <button className="btn btn-primary btn-block">
-                    Total: {Math.floor(total)}
+                  <div className="card">Total: {total}</div>{" "}
+                  <button
+                    className="btn btn-primary btn-block"
+                    onClick={() => makePayment(total)}
+                  >
+                    Make Payment
                   </button>
                 </div>
               </div>
