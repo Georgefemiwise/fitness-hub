@@ -11,19 +11,19 @@ import img8 from './8.jpg'
 import img9 from './9.jpg'
 import img10 from './10.jpg'
 import img11 from './11.jpg'
-// import img12 from './12.jpg'
-// import img13 from './13.jpg'
-// import img14 from './14.jpg'
-import gggg from './donbell.jpg'
-// import img16 from './16.jpg'
-// import img17 from './17.jpg'
-// import img18 from './18.jpg'
-// import img19 from './19.jpg'
-// import img20 from './20.jpg'
-// import img21 from './21.jpg'
 
-// import and export images from thiks folder as a silgle import
-// export {img1, img2,img3,img4,img5}
+import water from './water.jpg'
+import treadmill from './treadmill.jpg'
+import protein from './protein.jpg'
+import gymbag from './gym bag.jpg'
+import exerciseball from './exercise ball.jpg'
+import gloves from './gloves.jpg'
+import kettleball from './kettleball.jpg'
+import jumprope from './jump rope.jpg'
+import gggg from './donbell.jpg'
+
+
+
 
 const dataset = [
         {
@@ -74,7 +74,7 @@ const dataset = [
         "price": 9.99,
         "stock_quantity": 120,
         "description": "Durable jump rope for effective cardio workouts. Suitable for both beginners and advanced fitness enthusiasts.",
-        "image": img6    },
+        "image": jumprope    },
     {
         "product_id": 7,
         "name": "Resistance Bands Set",
@@ -98,7 +98,7 @@ const dataset = [
         "price": 39.99,
         "stock_quantity": 60,
         "description": "Cast iron kettlebell for dynamic strength and endurance workouts. Features a comfortable grip for controlled movements.",
-        "image": img9    },
+        "image": kettleball    },
     {
         "product_id": 10,
         "name": "Foam Roller",
@@ -115,7 +115,7 @@ const dataset = [
         "price": 34.99,
         "stock_quantity": 100,
         "description": "Spacious gym bag with multiple compartments for organized storage of your workout essentials. Stylish and functional.",
-        "image": img11
+        "image": gymbag
     },
     {
         "product_id": 12,
@@ -124,7 +124,7 @@ const dataset = [
         "price": 49.99,
         "stock_quantity": 50,
         "description": "Sturdy pull-up bar for upper body strength development. Easily mounts on door frames for convenient home use.",
-        "image": img12
+        "image": img11
     },
     {
         "product_id": 13,
@@ -133,7 +133,7 @@ const dataset = [
         "price": 12.99,
         "stock_quantity": 120,
         "description": "Comfortable and durable workout gloves to protect your hands during weightlifting and other fitness activities.",
-        "image": img2
+        "image": gloves
     },
     {
         "product_id": 14,
@@ -142,7 +142,7 @@ const dataset = [
         "price": 599.99,
         "stock_quantity": 25,
         "description": "Motorized treadmill with adjustable incline and built-in programs. Bring the benefits of cardio workouts to your home.",
-        "image": img3
+        "image": treadmill
     },
     {
         "product_id": 15,
@@ -160,7 +160,7 @@ const dataset = [
         "price": 7.99,
         "stock_quantity": 150,
         "description": "BPA-free water bottle with a convenient flip-top lid. Stay hydrated during workouts and throughout the day.",
-        "image": img5
+        "image": water
     },
     {
         "product_id": 17,
@@ -196,7 +196,7 @@ const dataset = [
         "price": 29.99,
         "stock_quantity": 100,
         "description": "High-quality protein powder to support muscle recovery and growth. Ideal for post-workout shakes and protein-rich recipes.",
-        "image": img9
+        "image": protein
     },
     {
         "product_id": 21,

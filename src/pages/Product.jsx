@@ -22,7 +22,7 @@ export default function Product() {
   };
   return (
     <div className="">
-      <Section>{data()}dd</Section>
+      <Section>{data()}</Section>
     </div>
   );
 }

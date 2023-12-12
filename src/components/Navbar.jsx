@@ -128,7 +128,7 @@ export default function NavBar() {
                   <div className="card">Total: {total}</div>{" "}
                   <button
                     className="btn btn-primary btn-block"
-                    onClick={() => makePayment(total)}
+                    onClick={() => makePayment(parseInt(total))}
                   >
                     Make Payment
                   </button>
