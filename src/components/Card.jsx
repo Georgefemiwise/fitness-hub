@@ -10,7 +10,7 @@ export default function Card({ id, desc, name, category, price, img }) {
         <img src={img} alt={name} className="rounded-xl max-h-64" />
       </figure>
       <div className="card-body ">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col items-center ">
           <h3 className="card-title">{name}</h3>
           <div className="badge badge-sm badge-outline">{category}</div>
         </div>

@@ -8,13 +8,13 @@ import img5 from './5.jpg'
 import img6 from './6.jpg'
 import img7 from './7.jpg'
 import img8 from './8.jpg'
-// import img9 from './9.jpg'
-// import img10 from './10.jpg'
-// import img11 from './11.jpg'
+import img9 from './9.jpg'
+import img10 from './10.jpg'
+import img11 from './11.jpg'
 // import img12 from './12.jpg'
 // import img13 from './13.jpg'
 // import img14 from './14.jpg'
-// import img15 from './15.jpg'
+import gggg from './donbell.jpg'
 // import img16 from './16.jpg'
 // import img17 from './17.jpg'
 // import img18 from './18.jpg'
@@ -98,7 +98,7 @@ const dataset = [
         "price": 39.99,
         "stock_quantity": 60,
         "description": "Cast iron kettlebell for dynamic strength and endurance workouts. Features a comfortable grip for controlled movements.",
-        "image": img3    },
+        "image": img9    },
     {
         "product_id": 10,
         "name": "Foam Roller",
@@ -106,7 +106,7 @@ const dataset = [
         "price": 14.99,
         "stock_quantity": 90,
         "description": "High-density foam roller for myofascial release and muscle recovery. Relieve muscle tightness and improve flexibility.",
-        "image": img1
+        "image": img10
     },
     {
         "product_id": 11,
@@ -115,7 +115,7 @@ const dataset = [
         "price": 34.99,
         "stock_quantity": 100,
         "description": "Spacious gym bag with multiple compartments for organized storage of your workout essentials. Stylish and functional.",
-        "image": img1
+        "image": img11
     },
     {
         "product_id": 12,
@@ -124,7 +124,7 @@ const dataset = [
         "price": 49.99,
         "stock_quantity": 50,
         "description": "Sturdy pull-up bar for upper body strength development. Easily mounts on door frames for convenient home use.",
-        "image": img1
+        "image": img12
     },
     {
         "product_id": 13,
@@ -133,7 +133,7 @@ const dataset = [
         "price": 12.99,
         "stock_quantity": 120,
         "description": "Comfortable and durable workout gloves to protect your hands during weightlifting and other fitness activities.",
-        "image": img1
+        "image": img2
     },
     {
         "product_id": 14,
@@ -142,7 +142,7 @@ const dataset = [
         "price": 599.99,
         "stock_quantity": 25,
         "description": "Motorized treadmill with adjustable incline and built-in programs. Bring the benefits of cardio workouts to your home.",
-        "image": img1
+        "image": img3
     },
     {
         "product_id": 15,
@@ -151,7 +151,7 @@ const dataset = [
         "price": 29.99,
         "stock_quantity": 80,
         "description": "Safety-certified cycling helmet with adjustable fit. Protect your head during cycling adventures or indoor cycling sessions.",
-        "image": img1
+        "image": img4
     },
     {
         "product_id": 16,
@@ -160,7 +160,7 @@ const dataset = [
         "price": 7.99,
         "stock_quantity": 150,
         "description": "BPA-free water bottle with a convenient flip-top lid. Stay hydrated during workouts and throughout the day.",
-        "image": img1
+        "image": img5
     },
     {
         "product_id": 17,
@@ -169,7 +169,7 @@ const dataset = [
         "price": 799.99,
         "stock_quantity": 30,
         "description": "Elliptical machine for low-impact, full-body cardio workouts. Features adjustable resistance levels and built-in programs.",
-        "image": img1
+        "image": img6
     },
     {
         "product_id": 18,
@@ -178,7 +178,7 @@ const dataset = [
         "price": 49.99,
         "stock_quantity": 40,
         "description": "Adjustable weighted vest for added resistance during running, walking, or bodyweight exercises. Enhance your cardio workouts.",
-        "image": img1
+        "image": img7
     },
     {
         "product_id": 19,
@@ -187,7 +187,7 @@ const dataset = [
         "price": 499.99,
         "stock_quantity": 20,
         "description": "Compact rowing machine for effective full-body workouts. Simulates the natural motion of rowing for cardiovascular fitness.",
-        "image": img1
+        "image": img8
     },
     {
         "product_id": 20,
@@ -196,7 +196,7 @@ const dataset = [
         "price": 29.99,
         "stock_quantity": 100,
         "description": "High-quality protein powder to support muscle recovery and growth. Ideal for post-workout shakes and protein-rich recipes.",
-        "image": img2
+        "image": img9
     },
     {
         "product_id": 21,
@@ -205,7 +205,7 @@ const dataset = [
         "price": 19.99,
         "stock_quantity": 70,
         "description": "Durable weightlifting belt for lumbar support during heavy lifts. Provides stability and helps prevent injuries.",
-        "image": img2
+        "image": img10
     },
     {
         "product_id": 22,
@@ -214,7 +214,7 @@ const dataset = [
         "price": 69.99,
         "stock_quantity": 45,
         "description": "Versatile TRX suspension trainer for bodyweight exercises. Easily adjustable for various fitness levels and workout intensities.",
-        "image": img2
+        "image": img11
     },
     {
         "product_id": 23,
@@ -223,7 +223,7 @@ const dataset = [
         "price": 349.99,
         "stock_quantity": 35,
         "description": "Stationary exercise bike for effective cardiovascular workouts. Adjustable resistance levels and comfortable seat for long rides.",
-        "image": img2
+        "image": img1
     },
     {
         "product_id": 24,
@@ -241,7 +241,7 @@ const dataset = [
         "price": 29.99,
         "stock_quantity": 50,
         "description": "Sauna suit for heat retention during workouts. Promotes sweat and can aid in temporary water weight loss.",
-        "image": img2
+        "image": gggg
     }
 ]
 
